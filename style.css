@@ -774,3 +774,70 @@ header {
         bottom: 5%;
     }
 }
+/* Contenedor general de los proyectos */
+.project-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del proyecto */
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Título del proyecto */
+.project-card h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Descripción */
+.project-card p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Botones de tecnologías y GitHub */
+.tech-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tech-buttons a {
+    padding: 6px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    color: #fff;
+    background-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+.tech-buttons a:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive: tarjetas más pequeñas en móviles */
+@media (max-width: 600px) {
+    .project-card {
+        max-width: 90%;
+        padding: 15px;
+    }
+}
