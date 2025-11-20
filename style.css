@@ -90,6 +90,39 @@ header {
     margin-bottom: 1rem;
 }
 
+/* Animación para el título */
+.animated-title {
+    animation: titleAnimation 1.2s ease-out forwards, subtleFloat 3s ease-in-out infinite;
+    animation-delay: 0s, 1.5s;
+    opacity: 0;
+}
+
+/* Animación de entrada */
+@keyframes titleAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    60% {
+        opacity: 0.8;
+        transform: translateY(-5px) scale(1.02);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Animación de flotación sutil continua */
+@keyframes subtleFloat {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-8px) scale(1);
+    }
+}
+
 .home-text h3 {
     position: relative;
     padding-left: 6rem;
@@ -170,9 +203,25 @@ header {
     text-decoration: none;
 }
 
+.home-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
 .home-img img {
     width: 100%;
     height: auto;
+}
+
+/* Estilo para cuando home-img contiene avatar-container */
+.home-img .avatar-container {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 /* ===== ABOUT PAGE ===== */
@@ -839,5 +888,248 @@ header {
     .project-card {
         max-width: 90%;
         padding: 15px;
+    }
+}
+
+/* ===== ANIMACIONES ORBITALES ===== */
+.avatar-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sun-core {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 10;
+    animation: pulse 3s ease-in-out infinite;
+    box-shadow: 0 0 30px rgba(0, 213, 255, 0.5);
+}
+
+.sun-core img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.orbit-icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid #1e1e24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.orbit-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 20px rgba(0, 213, 255, 0.6);
+    z-index: 15;
+}
+
+.orbit-icon img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+/* Posicionamiento inicial de cada icono orbital - todos centrados */
+.orbit-icon {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Cada icono orbita con diferentes velocidades y desplazamientos angulares */
+.orbit-icon.html {
+    animation: orbit-html 15s linear infinite;
+}
+
+.orbit-icon.css {
+    animation: orbit-css 18s linear infinite;
+}
+
+.orbit-icon.js {
+    animation: orbit-js 20s linear infinite;
+}
+
+.orbit-icon.react {
+    animation: orbit-react 16s linear infinite;
+}
+
+.orbit-icon.python {
+    animation: orbit-python 19s linear infinite;
+}
+
+.orbit-icon.git {
+    animation: orbit-git 17s linear infinite;
+}
+
+/* Animaciones de órbita individuales con diferentes ángulos iniciales */
+@keyframes orbit-html {
+    0% {
+        transform: rotate(0deg) translateX(180px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(180px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit-css {
+    0% {
+        transform: rotate(51deg) translateX(180px) rotate(-51deg);
+    }
+    100% {
+        transform: rotate(411deg) translateX(180px) rotate(-411deg);
+    }
+}
+
+@keyframes orbit-js {
+    0% {
+        transform: rotate(102deg) translateX(180px) rotate(-102deg);
+    }
+    100% {
+        transform: rotate(462deg) translateX(180px) rotate(-462deg);
+    }
+}
+
+@keyframes orbit-react {
+    0% {
+        transform: rotate(153deg) translateX(180px) rotate(-153deg);
+    }
+    100% {
+        transform: rotate(513deg) translateX(180px) rotate(-513deg);
+    }
+}
+
+@keyframes orbit-python {
+    0% {
+        transform: rotate(255deg) translateX(180px) rotate(-255deg);
+    }
+    100% {
+        transform: rotate(615deg) translateX(180px) rotate(-615deg);
+    }
+}
+
+@keyframes orbit-git {
+    0% {
+        transform: rotate(306deg) translateX(180px) rotate(-306deg);
+    }
+    100% {
+        transform: rotate(666deg) translateX(180px) rotate(-666deg);
+    }
+}
+
+/* Animación de pulso para la imagen central */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 30px rgba(0, 213, 255, 0.5);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 40px rgba(0, 213, 255, 0.8);
+    }
+}
+
+/* Ajustes responsivos para animaciones orbitales */
+@media (max-width: 900px) {
+    .avatar-container {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .sun-core {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .orbit-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    /* Actualizar radios de órbita para tablets */
+    @keyframes orbit-html {
+        0% { transform: rotate(0deg) translateX(130px) rotate(0deg); }
+        100% { transform: rotate(360deg) translateX(130px) rotate(-360deg); }
+    }
+    @keyframes orbit-css {
+        0% { transform: rotate(51deg) translateX(130px) rotate(-51deg); }
+        100% { transform: rotate(411deg) translateX(130px) rotate(-411deg); }
+    }
+    @keyframes orbit-js {
+        0% { transform: rotate(102deg) translateX(130px) rotate(-102deg); }
+        100% { transform: rotate(462deg) translateX(130px) rotate(-462deg); }
+    }
+    @keyframes orbit-react {
+        0% { transform: rotate(153deg) translateX(130px) rotate(-153deg); }
+        100% { transform: rotate(513deg) translateX(130px) rotate(-513deg); }
+    }
+    @keyframes orbit-python {
+        0% { transform: rotate(255deg) translateX(130px) rotate(-255deg); }
+        100% { transform: rotate(615deg) translateX(130px) rotate(-615deg); }
+    }
+    @keyframes orbit-git {
+        0% { transform: rotate(306deg) translateX(130px) rotate(-306deg); }
+        100% { transform: rotate(666deg) translateX(130px) rotate(-666deg); }
+    }
+}
+
+@media (max-width: 768px) {
+    .avatar-container {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .sun-core {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .orbit-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    /* Actualizar radios de órbita para móviles */
+    @keyframes orbit-html {
+        0% { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+        100% { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+    }
+    @keyframes orbit-css {
+        0% { transform: rotate(51deg) translateX(100px) rotate(-51deg); }
+        100% { transform: rotate(411deg) translateX(100px) rotate(-411deg); }
+    }
+    @keyframes orbit-js {
+        0% { transform: rotate(102deg) translateX(100px) rotate(-102deg); }
+        100% { transform: rotate(462deg) translateX(100px) rotate(-462deg); }
+    }
+    @keyframes orbit-react {
+        0% { transform: rotate(153deg) translateX(100px) rotate(-153deg); }
+        100% { transform: rotate(513deg) translateX(100px) rotate(-513deg); }
+    }
+    @keyframes orbit-python {
+        0% { transform: rotate(255deg) translateX(100px) rotate(-255deg); }
+        100% { transform: rotate(615deg) translateX(100px) rotate(-615deg); }
+    }
+    @keyframes orbit-git {
+        0% { transform: rotate(306deg) translateX(100px) rotate(-306deg); }
+        100% { transform: rotate(666deg) translateX(100px) rotate(-666deg); }
     }
 }
