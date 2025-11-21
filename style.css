@@ -763,45 +763,6 @@ header {
         width: 200px;
     }
 
-    .contact-form {
-        padding: 30px;
-    }
-}
-
-/* ===== Phones ===== */
-@media (max-width: 480px) {
-    header {
-        padding: 15px 10px;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .logo {
-        font-size: 18px;
-    }
-
-    .home-text h2 {
-        font-size: 1.8rem;
-    }
-
-    .home-text h3 {
-        font-size: 1rem;
-        padding-left: 1.5rem;
-    }
-
-    .home {
-        padding: 1rem 1rem 0 1rem;
-        margin: 90px 15px;
-    }
-
-    .socials-icon{
-        display: none;
-    }
-
-    .home-img img {
-        width: 100%;
-    }
-
     .projects-container {
         gap: 15px;
     }

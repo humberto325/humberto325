@@ -80,6 +80,14 @@ if (menuToggle && slideMenu) {
     menuToggle.addEventListener('click', () => {
         slideMenu.classList.toggle('active');
     });
+
+    // Close menu when a link is clicked
+    const menuLinks = slideMenu.querySelectorAll('a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            slideMenu.classList.remove('active');
+        });
+    });
 }
 
 // Language Toggle Logic
