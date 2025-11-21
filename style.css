@@ -42,6 +42,20 @@ header {
 
 .header-list a,
 .header-list-icon a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.header-list-icon {
+    border-left: 3px solid rgb(0, 179, 255);
+    padding: 0 10px;
+}
+
+.header-list a:hover,
+.header-list a.active {
+    color: #00bbff;
 }
 
 .header-list a::after {
