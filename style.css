@@ -1036,24 +1036,7 @@ header {
 }
 
 /* Animación de pulso para la imagen central */
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-        box-shadow: 0 0 30px rgba(0, 213, 255, 0.5);
-    }
-    50% {
-        transform: scale(1.05);
-        box-shadow: 0 0 40px rgba(0, 213, 255, 0.8);
-    }
-}
 
-/* Ajustes responsivos para animaciones orbitales */
-@media (max-width: 900px) {
-    .avatar-container {
-        width: 300px;
-        height: 300px;
-    }
-    
     .sun-core {
         width: 140px;
         height: 140px;
@@ -1089,7 +1072,6 @@ header {
         0% { transform: rotate(306deg) translateX(130px) rotate(-306deg); }
         100% { transform: rotate(666deg) translateX(130px) rotate(-666deg); }
     }
-}
 
 @media (max-width: 768px) {
     .avatar-container {
