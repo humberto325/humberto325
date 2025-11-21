@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="logo">
-            <h3><span>a</span>mine</h3>
+            <h3><span>H</span>umber</h3>
         </div>
         <!-- زر القائمة للهواتف -->
 <div class="menu-toggle" id="menu-toggle">
@@ -21,23 +21,24 @@
 </div>
 
         <ul class="header-list">
-            <li><a href="index.html" class="fade-link" data-link>inicio</a></li>
-            <li><a href="about.html" class="fade-link" data-link>sobre mi </a></li>
-            <li><a href="project.html" class="fade-link" data-link>proyectos</a></li>
-            <li><a href="contact.html" class="fade-link" data-link>Contacto</a></li>
+            <li><a href="index.html" class="fade-link" data-link data-i18n="nav.home">inicio</a></li>
+            <li><a href="about.html" class="fade-link" data-link data-i18n="nav.about">sobre mi </a></li>
+            <li><a href="project.html" class="fade-link" data-link data-i18n="nav.projects">proyectos</a></li>
+            <li><a href="contact.html" class="fade-link" data-link data-i18n="nav.contact">Contacto</a></li>
         </ul>
         <ul class="header-list-icon">
             <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><button id="language-toggle" class="lang-btn">ES</button></li>
         </ul>
     </header>
     <div class="slide-menu" id="slide-menu">
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="project.html" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
     </ul>
 </div>
 
@@ -47,22 +48,22 @@
            
             <div class="info-text">
                 <h5>@Humberto</h5>
-                <p>Python Developer and frontend junior</p>
+                <p data-i18n="about.role">Python Developer and frontend junior</p>
             </div>
         </div>
-        <h3>ABOUT ME</h3>
+        <h3 data-i18n="about.title">ABOUT ME</h3>
         <div class="about-info2">
             <div class="about-text">
-                <p>Hi! I'm Humberto Rivero, a motivated and dedicated Computer Engineering student from Paraguay.</p>
-                <p>I’m currently studying Computer Engineering, where I’ve developed a strong interest in programming, web development, and creating functional solutions that bring ideas to life through technology.</p>
-                <p>I’m particularly focused on clean code practices, web development fundamentals, and interactive projects that blend simplicity with real functionality.</p>
-                <p>Right now, I’m improving my skills in:</p>
-                <p><span>#</span>Python for logic, problem-solving, and practical coding exercises</p>
-                <p><span>#</span>HTML, CSS, and JavaScript for building structured and responsive web pages</p>
-                <p><span>#</span>Git and GitHub for project organization and version control</p>
-                <p><span>#</span>Cursor AI and Google Antigravity to enhance my workflow and explore new tools</p>
-                <p><span>#</span>Creating personal projects and learning new technologies to grow my portfolio</p>
-                <p>I have a strong passion for starting my professional journey in a company and developing my skills as a future software developer.</p>
+                <p data-i18n="about.p1">Hi! I'm Humberto Rivero, a motivated and dedicated Computer Engineering student from Paraguay.</p>
+                <p data-i18n="about.p2">I’m currently studying Computer Engineering, where I’ve developed a strong interest in programming, web development, and creating functional solutions that bring ideas to life through technology.</p>
+                <p data-i18n="about.p3">I’m particularly focused on clean code practices, web development fundamentals, and interactive projects that blend simplicity with real functionality.</p>
+                <p data-i18n="about.p4">Right now, I’m improving my skills in:</p>
+                <p><span>#</span><span data-i18n="about.li1">Python for logic, problem-solving, and practical coding exercises</span></p>
+                <p><span>#</span><span data-i18n="about.li2">HTML, CSS, and JavaScript for building structured and responsive web pages</span></p>
+                <p><span>#</span><span data-i18n="about.li3">Git and GitHub for project organization and version control</span></p>
+                <p><span>#</span><span data-i18n="about.li4">Cursor AI and Google Antigravity to enhance my workflow and explore new tools</span></p>
+                <p><span>#</span><span data-i18n="about.li5">Creating personal projects and learning new technologies to grow my portfolio</span></p>
+                <p data-i18n="about.p5">I have a strong passion for starting my professional journey in a company and developing my skills as a future software developer.</p>
 
             </div>
            

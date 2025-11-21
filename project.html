@@ -13,37 +13,38 @@
 <body>
     <header>
         <div class="logo">
-            <h3><span>a</span>mine</h3>
+            <h3><span>H</span>umber</h3>
         </div>
         <div class="menu-toggle" id="menu-toggle">
             <i class="fa-solid fa-bars"></i>
         </div>
         <ul class="header-list">
-            <li><a href="index.html" class="fade-link" data-link>inicio</a></li>
-            <li><a href="about.html" class="fade-link" data-link>sobre mi </a></li>
-            <li><a href="project.html" class="fade-link" data-link>proyectos</a></li>
-            <li><a href="contact.html" class="fade-link" data-link>Contacto</a></li>
+            <li><a href="index.html" class="fade-link" data-link data-i18n="nav.home">inicio</a></li>
+            <li><a href="about.html" class="fade-link" data-link data-i18n="nav.about">sobre mi </a></li>
+            <li><a href="project.html" class="fade-link" data-link data-i18n="nav.projects">proyectos</a></li>
+            <li><a href="contact.html" class="fade-link" data-link data-i18n="nav.contact">Contacto</a></li>
         </ul>
         <ul class="header-list-icon">
             <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><button id="language-toggle" class="lang-btn">ES</button></li>
         </ul>
     </header>
 
     <div class="slide-menu" id="slide-menu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="project.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="project.html" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
     </div>
 
     <section class="project">
         <div class="title-project">
-            <h4>Herramientas y proyectos</h4>
-            <p>Aqui puedes ver algunas herramientas que utilice y proyectos personales  desarrollados para mi aprendizaje </p>
+            <h4 data-i18n="project.title1">Herramientas y proyectos</h4>
+            <p data-i18n="project.desc1">Aqui puedes ver algunas herramientas que utilice y proyectos personales  desarrollados para mi aprendizaje </p>
         </div>
 
         <div class="tools">
@@ -58,14 +59,14 @@
         </div>
 
         <div class="title-project">
-            <p>Aqui puedes ver mis proyectos mas recientes </p>
+            <p data-i18n="project.title2">Aqui puedes ver mis proyectos mas recientes </p>
         </div>
 
        
             <div class="project-card">
                 <img src="images/Captura de pantalla 2025-11-18 140813.png" alt="Sistema Inventario">
-                <h3>Sistema de Inventario</h3>
-                <p>Gestiona productos, precios, stock y ventas con una base de datos integrada.</p>
+                <h3 data-i18n="project.card1.title">Sistema de Inventario</h3>
+                <p data-i18n="project.card1.desc">Gestiona productos, precios, stock y ventas con una base de datos integrada.</p>
                 <div class="tech-buttons">
                     <a href="#">Python</a>
                     <a href="https://github.com/humberto325" target="_blank">GitHub</a>
@@ -77,8 +78,8 @@
      
     <div class="project-card">
                 <img src="images/login_register.png" alt="Sistema Inventario">
-                <h3>Login and Register system</h3>
-                <p>Un login simple con movimiento y registro.</p>
+                <h3 data-i18n="project.card2.title">Login and Register system</h3>
+                <p data-i18n="project.card2.desc">Un login simple con movimiento y registro.</p>
                 <div class="tech-buttons">
                     <a href="#">HTML</a>
                     <a href="https://github.com/humberto325" target="_blank">GitHub</a>
