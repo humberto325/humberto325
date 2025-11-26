@@ -41,6 +41,50 @@
         </ul>
     </div>
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@300..800&family=Playfair+Display:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h3><span>H</span>umber</h3>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="header-list">
+            <li><a href="index.html" class="fade-link" data-link data-i18n="nav.home">inicio</a></li>
+            <li><a href="about.html" class="fade-link" data-link data-i18n="nav.about">sobre mi </a></li>
+            <li><a href="project.html" class="fade-link" data-link data-i18n="nav.projects">proyectos</a></li>
+            <li><a href="contact.html" class="fade-link" data-link data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+        <ul class="header-list-icon">
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><button id="language-toggle" class="lang-btn">ES</button></li>
+        </ul>
+    </header>
+
+    <div class="slide-menu" id="slide-menu">
+        <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="project.html" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+    </div>
+
     <section class="project">
         <div class="title-project">
             <h4 data-i18n="project.title1">Herramientas y proyectos</h4>
@@ -63,6 +107,7 @@
         </div>
 
        
+        <div class="projects-container">
             <div class="project-card">
                 <img src="images/Captura de pantalla 2025-11-18 140813.png" alt="Sistema Inventario">
                 <h3 data-i18n="project.card1.title">Sistema de Inventario</h3>
@@ -73,11 +118,9 @@
                     <a href="#">SQLite3</a>
                 </div>
             </div>
-        </div>
-    </section>
-     
-    <div class="project-card">
-                <img src="images/login.png" alt="Sistema Inventario">
+
+            <div class="project-card">
+                <img src="images/login.png" alt="Sistema Login">
                 <h3 data-i18n="project.card2.title">Login and Register system</h3>
                 <p data-i18n="project.card2.desc">Un login simple con movimiento y registro.</p>
                 <div class="tech-buttons">
@@ -85,6 +128,17 @@
                     <a href="https://github.com/humberto325" target="_blank">GitHub</a>
                     <a href="#">CSS</a>
                     <a href="#">JavaScript</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/snake-game-preview.png" alt="Snake Game">
+                <h3 data-i18n="project.card3.title">Snake Game</h3>
+                <p data-i18n="project.card3.desc">Juego clásico de la serpiente con diseño moderno, puntuaciones y animaciones.</p>
+                <div class="tech-buttons">
+                    <a href="snake-game.html">Jugar Ahora</a>
+                    <a href="https://github.com/humberto325" target="_blank">GitHub</a>
+                    <a href="#">Game Dev</a>
                 </div>
             </div>
         </div>
