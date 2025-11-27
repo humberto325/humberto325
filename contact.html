@@ -15,9 +15,9 @@
         <div class="logo">
             <h3><span>H</span>umber</h3>
         </div>
-<div class="menu-toggle" id="menu-toggle">
-    <i class="fa-solid fa-bars"></i>
-</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
 
         <ul class="header-list">
            <li><a href="index.html" class="fade-link" data-link data-i18n="nav.home">inicio</a></li>
@@ -33,30 +33,26 @@
         </ul>
     </header>
     <div class="slide-menu" id="slide-menu">
-    <ul>
-        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-        <li><a href="about.html" data-i18n="nav.about">About</a></li>
-        <li><a href="project.html" data-i18n="nav.projects">Projects</a></li>
-        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
-    </ul>
-</div>
+        <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="project.html" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+    </div>
 
     <section class="contact">
         <h3><span data-i18n="contact.title">Get in Touch</span> <i class="fa-regular fa-message"></i></h3>
- <div class="container">
+        <div class="container">
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <p>amine@example.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+213 00 11 22 33 44</p>
+                        <p>humbertojavierrivero@gmail.com</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p>Algerie, Boumerdès</p>
+                        <p>Paraguay</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
@@ -64,24 +60,29 @@
                     </div>
                     <div class="social-links-contact">
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/humberto325" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <form class="contact-form">
+                
+                <form class="contact-form" action="https://formsubmit.co/humbertojavierrivero@gmail.com" method="POST">
+                    <!-- Configuración de FormSubmit -->
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde tu Portfolio!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://humberto325.github.io/humberto325/thank-you.html">
+                    
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Subject" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" rows="6" required></textarea>
+                        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
                     </div>
                     <button type="submit" class="btn" data-i18n="contact.btn">Send Message</button>
                 </form>
