@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Citas - Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <div class="logo-section">
+        <div class="logo-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h1>Mini Citas</h1>
+        <p class="tagline">Encuentra tu conexión perfecta</p>
+      </div>
+
+      <form id="loginForm" class="login-form" novalidate>
+        <div class="form-group">
+          <label for="email">
+            <i class="fas fa-envelope"></i> Email
+          </label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email"
+            placeholder="tu@email.com" 
+            autocomplete="email"
+            required
+            aria-describedby="email-error"
+          >
+          <span id="email-error" class="error-text" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">
+            <i class="fas fa-lock"></i> Contraseña
+          </label>
+          <div class="password-input-wrapper">
+            <input 
+              type="password" 
+              id="password" 
+              name="password"
+              placeholder="••••••••" 
+              autocomplete="current-password"
+              required
+              aria-describedby="password-error"
+            >
+            <button type="button" class="toggle-password" aria-label="Mostrar contraseña">
+              <i class="fas fa-eye"></i>
+            </button>
+          </div>
+          <span id="password-error" class="error-text" role="alert"></span>
+        </div>
+
+        <div class="remember-forgot">
+          <label class="remember">
+            <input type="checkbox" name="remember" id="remember">
+            <span>Recuérdame</span>
+          </label>
+          <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <button type="submit" class="btn-login">
+          <span class="btn-text">Iniciar Sesión</span>
+          <span class="btn-loader" aria-hidden="true"></span>
+        </button>
+      </form>
+
+      <div class="divider">
+        <span>O continúa con</span>
+      </div>
+
+      <div class="social-login">
+        <button type="button" class="social-btn google" aria-label="Iniciar sesión con Google">
+          <i class="fab fa-google"></i>
+          <span>Google</span>
+        </button>
+        <button type="button" class="social-btn facebook" aria-label="Iniciar sesión con Facebook">
+          <i class="fab fa-facebook"></i>
+          <span>Facebook</span>
+        </button>
+        <button type="button" class="social-btn apple" aria-label="Iniciar sesión con Apple">
+          <i class="fab fa-apple"></i>
+          <span>Apple</span>
+        </button>
+      </div>
+
+      <p id="loginError" class="error-message" role="alert" aria-live="polite"></p>
+
+      <div class="signup-link">
+        <p>¿No tienes cuenta? <a href="register.html">Regístrate aquí</a></p>
+      </div>
+    </div>
+
+    <div class="illustration-section">
+      <div class="floating-hearts">
+        <span class="heart" style="--delay: 0s">💕</span>
+        <span class="heart" style="--delay: 1s">💖</span>
+        <span class="heart" style="--delay: 2s">💗</span>
+        <span class="heart" style="--delay: 3s">💝</span>
+        <span class="heart" style="--delay: 1.5s">💓</span>
+        <span class="heart" style="--delay: 2.5s">💞</span>
+      </div>
+      <div class="welcome-text">
+        <h2>Bienvenido de nuevo</h2>
+        <p>Conecta con personas increíbles y encuentra tu match perfecto</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
