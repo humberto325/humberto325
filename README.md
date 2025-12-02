@@ -16,7 +16,7 @@ Humberto Rivero – 2nd Year Computer Engineering Student | Frontend Developer
 # My Portfolio Website
 
 🚀 **Welcome to my Portfolio!**  
-This is my personal portfolio website where I showcase my **projects**, **skills**, and **contact information**. Built with a focus on **UI/UX design** and **frontend development**.
+This is my personal portfolio website where I showcase my **projects**, **skills**, and **contact information**. Built with a focus on **backend** and **frontend development**.
 
 ---
 
@@ -26,86 +26,88 @@ You can view the live website here: [Live Demo](https://humberto325.github.io/hu
 
 ---
 
-## 🌟 Website Sections
+Website Sections
 
-- **Home**: Developer introduction with avatar and short description  
-- **About**: Experience, tech stack, personal insights, and skill cards  
-- **Projects**: Showcase of projects with images, descriptions, and skills  
-- **Services**: Highlighting services offered with interactive cards  
-- **Contact**: Contact form and social links with interactive hover effects
+Home: Introduction as a Junior Backend Developer, including a brief personal introduction, an avatar, and a summary of my skills.
 
----
+About: Academic and practical experience, technologies I use (Python, SQLite, HTML, CSS, JavaScript), and a personal vision of my growth as a developer. Includes skill cards.
 
-## Features
+Projects: Section showcasing my 4 developed projects: CRUD systems, login/register applications, games, and API consumption projects. Each project includes images, descriptions, and technologies used.
 
-- **Responsive Design:** Works perfectly on desktop, tablet, and mobile.  
-- **Projects Showcase:** 9+ projects displayed with images, descriptions, and used technologies.  
-- **Interactive Cards:** Smooth hover effects with gradient backgrounds and subtle animations.  
-- **Contact Page:** Form with Name, Email, Subject, Message, plus social links and contact info.  
-- **Modern UI/UX:** Clean layout with gradient effects, shadows, and professional typography.
+Services: Services I can offer, such as developing simple Python systems, static web pages with HTML/CSS/JS, and small API integrations.
 
----
+Contact: Contact form with name, email, and message fields, plus links to my social media and GitHub. Smooth hover animations included.
 
-## Technologies Used
+Features
 
-- **HTML5 & CSS3**  
-- **Font Awesome** for icons  
-- **Responsive Design (Flexbox & Grid)**  
-- **Optional JS for form enhancements** (if needed)
+Responsive Design: Interface adaptable for desktop, tablet, and mobile.
 
----
+Project Showcase: Detailed presentation of my 4 projects with images and descriptions.
 
-## 📂 Project Structure
+Interactive Cards: Interactive cards with smooth hover effects and modern animations.
 
-portfolio4/
-│
-├─ index.html # Html file
-├─ about.html # Html file
-├─ projectes.html # Html file
-├─ contact.html # Html file
-├─ styles.css # CSS file
-├─ script.js # JavaScript file
-├─ images/ # Folder containing project and profile images
-└─ README.md # Project documentation
+Contact Page: Functional form and direct links to my social media profiles.
 
----
+Modern UI/UX: Clean design with gradients, soft shadows, and professional typography.
 
-## 📌 Installation
+Technologies Used
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Saboo24/portfolio4.git
-   ```
-2. Navigate to the project folder:
-   ```bash
-   cd portfolio4
-   ```
-3. Open `index.html` in your favorite browser to view the website.
+HTML5 & CSS3
+
+JavaScript
+
+Python (Backend)
+
+SQLite3
+
+Responsive Design (Flexbox & Grid)
+
+Font Awesome
+
+Project Structure
+
+humberto-portfolio/
+│── index.html
+│── about.html
+│── projects.html
+│── services.html
+│── contact.html
+│── styles.css
+│── script.js
+└── images/
+
 
 ---
 
-## 💡 Usage
+📌 Installation
 
-- Showcase your personal projects, skills, and blog posts.  
-- Use as a template for your own portfolio by replacing images, text, and links.  
-- The contact form can be connected to your preferred email service or backend.
+Cloná el repositorio:
 
----
+git clone https://github.com/humberto325/humberto-portfolio.git
 
-## 📜 License
+Ingresá al proyecto:
 
-This project is licensed under the terms described in the [LICENSE](License) file.
+cd humberto-portfolio
 
----
+Abrí el archivo principal:
 
-## 📬 Contact
+index.html
 
-- Email: aminehamzaoui1925@gmail.com   
-- Location: Boumerdès, Algeria  
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohamed-amine-hamzaoui-a2453a35b/)  
-- GitHub: [GitHub](https://github.com/Saboo24)  
-- Instagram: [Instagram](https://www.instagram.com/a__m.i.n__e/?utm_source=ig_web_button_share_sheet)
 
 ---
 
-Made with ❤️ by **Amine Hamzaoui**
+💡 Usage
+
+This portfolio is designed to showcase my projects, skills, experience, and contact options.
+You can use it as a template by customizing the texts, images, and links.
+The contact form can be connected to a custom backend or external services in the future.
+
+
+---
+
+📬 Contact
+
+Email: humbertojavierrivero@gmail.com
+Ubicación: San Lorenzo, Paraguay
+LinkedIn: https://linkedin.com/in/tuusuario
+GitHub: https://github.com/humberto325
