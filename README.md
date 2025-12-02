@@ -28,7 +28,7 @@ You can view the live website here: [Live Demo](https://humberto325.github.io/hu
 
 Website Sections
 
-Home: Introduction as a Junior Backend Developer, including a brief personal introduction, an avatar, and a summary of my skills.
+Home: Introduction as a Junior Backend and front Developer, including a brief personal introduction, an avatar, and a summary of my skills.
 
 About: Academic and practical experience, technologies I use (Python, SQLite, HTML, CSS, JavaScript), and a personal vision of my growth as a developer. Includes skill cards.
 
