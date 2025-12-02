@@ -88,5 +88,5 @@ The contact form can be connected to a custom backend or external services in th
 
 Email: humbertojavierrivero@gmail.com
 Ubicación: San Lorenzo, Paraguay
-
+https://www.linkedin.com/in/humberto-javier-rivero-zenteno-118762368/
 GitHub: https://github.com/humberto325
