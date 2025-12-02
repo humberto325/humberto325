@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Juego de la Serpiente</title>
+    <link rel="stylesheet" href="snake-style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="game-header">
+            <h1>🐍 Snake Game</h1>
+            <p class="subtitle">¡Come las manzanas y crece!</p>
+        </header>
+
+        <!-- Game Info -->
+        <div class="game-info">
+            <div class="info-card">
+                <span class="label">Puntuación</span>
+                <span class="value" id="score">0</span>
+            </div>
+            <div class="info-card">
+                <span class="label">Récord</span>
+                <span class="value" id="highScore">0</span>
+            </div>
+            <div class="info-card">
+                <span class="label">Nivel</span>
+                <span class="value" id="level">1</span>
+            </div>
+        </div>
+
+        <!-- Game Canvas -->
+        <div class="game-wrapper">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            
+            <!-- Game Over Screen -->
+            <div class="game-over" id="gameOver">
+                <div class="game-over-content">
+                    <h2>¡Game Over! 💀</h2>
+                    <p class="final-score">Puntuación: <span id="finalScore">0</span></p>
+                    <p class="high-score-msg" id="highScoreMsg"></p>
+                    <button class="btn btn-primary" onclick="restartGame()">
+                        🔄 Jugar de Nuevo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Start Screen -->
+            <div class="start-screen" id="startScreen">
+                <div class="start-content">
+                    <h2>¡Bienvenido! 🎮</h2>
+                    <p>Usa las flechas del teclado para mover la serpiente</p>
+                    <div class="controls-info">
+                        <div class="control-item">
+                            <span class="key">↑</span>
+                            <span>Arriba</span>
+                        </div>
+                        <div class="control-item">
+                            <span class="key">↓</span>
+                            <span>Abajo</span>
+                        </div>
+                        <div class="control-item">
+                            <span class="key">←</span>
+                            <span>Izquierda</span>
+                        </div>
+                        <div class="control-item">
+                            <span class="key">→</span>
+                            <span>Derecha</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-large" onclick="startGame()">
+                        ▶️ Comenzar Juego
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Controls -->
+        <div class="mobile-controls" id="mobileControls">
+            <div class="control-row">
+                <button class="control-btn" onclick="changeDirection('UP')">↑</button>
+            </div>
+            <div class="control-row">
+                <button class="control-btn" onclick="changeDirection('LEFT')">←</button>
+                <button class="control-btn" onclick="changeDirection('DOWN')">↓</button>
+                <button class="control-btn" onclick="changeDirection('RIGHT')">→</button>
+            </div>
+        </div>
+
+        <!-- Game Controls -->
+        <div class="game-controls">
+            <button class="btn btn-secondary" onclick="togglePause()" id="pauseBtn">
+                ⏸️ Pausar
+            </button>
+            <button class="btn btn-secondary" onclick="restartGame()">
+                🔄 Reiniciar
+            </button>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions">
+            <h3>📖 Instrucciones</h3>
+            <ul>
+                <li>🎯 Come las manzanas rojas para ganar puntos</li>
+                <li>📈 Cada 5 manzanas subes de nivel y el juego se acelera</li>
+                <li>⚠️ No choques con las paredes ni con tu propio cuerpo</li>
+                <li>🏆 ¡Intenta superar tu récord personal!</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer class="game-footer">
+            <p>Creado con ❤️ para tu portafolio</p>
+            <a href="index.html" class="btn btn-link">← Volver al Portafolio</a>
+        </footer>
+    </div>
+
+    <script src="snake-game.js"></script>
+</body>
+</html>
