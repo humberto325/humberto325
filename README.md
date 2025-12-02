@@ -66,34 +66,6 @@ Font Awesome
 
 Project Structure
 
-humberto-portfolio/
-│── index.html
-│── about.html
-│── projects.html
-│── services.html
-│── contact.html
-│── styles.css
-│── script.js
-└── images/
-
-
----
-
-📌 Installation
-
-Cloná el repositorio:
-
-git clone https://github.com/humberto325/humberto-portfolio.git
-
-Ingresá al proyecto:
-
-cd humberto-portfolio
-
-Abrí el archivo principal:
-
-index.html
-
-
 ---
 
 💡 Usage
