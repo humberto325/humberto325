@@ -1,6 +1,7 @@
 
 
-Humberto Rivero – 2nd Year Computer Engineering Student | Frontend Developer
+Humberto Rivero – 2nd Year Computer Engineering Student | Frontend Developer And 
+automation
 
 💡 “Building clean, logical, and interactive code while continuously learning and growing in every project.”
 ---
