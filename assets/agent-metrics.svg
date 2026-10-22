@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="771" height="294" viewBox="0 0 771 294" role="img" aria-label="AI systems in production: WhatsApp AI agent that qualifies leads and books calls, human handoff with Slack, automated follow-ups and end-to-end B2B outbound.">
+<defs><linearGradient id="scan" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#22d3ee" stop-opacity="0"/><stop offset="1" stop-color="#22d3ee" stop-opacity=".3"/></linearGradient>
+<linearGradient id="pk" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee" stop-opacity="0"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<style>
+text{font:500 12.5px 'JetBrains Mono',ui-monospace,Consolas,monospace}.h{font-weight:700;font-size:13.5px}
+.bg{fill:#ffffff}.t{fill:#24292f}.a{fill:#0e7490}.dim{fill:#57606a}.panel{fill:#f6f8fa;stroke:#d0d7de}.edge{fill:#0e7490}
+.tile{animation:rise 10s ease-out infinite}
+.edge{transform-box:fill-box;transform-origin:top;animation:edge 10s ease-out infinite}
+.live{fill:#22c55e;animation:pulse 1.6s ease-in-out infinite}
+.ring{fill:none;stroke:#22c55e;stroke-width:1.5;transform-box:fill-box;transform-origin:center;animation:ring 1.6s ease-out infinite}
+.beam{fill:none;stroke:#22d3ee;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:70 825;filter:url(#glow);animation:beam 4.4s linear infinite}
+.cover{transform-box:fill-box;transform-origin:right;animation:type 10s steps(46) infinite}.cv{fill:#ffffff}.cvp{fill:#f6f8fa}
+.tile,.edge,.cover{animation-fill-mode:backwards}
+.track{stroke:#d0d7de;stroke-width:1}
+.packet{fill:#22d3ee;filter:url(#glow);animation:flow 3s cubic-bezier(.6,0,.4,1) infinite}
+.scan{animation:scan 4s linear infinite}
+.cur{fill:#22d3ee;animation:blink 1s steps(1) infinite}
+@keyframes ring{0%{transform:scale(1);opacity:.8}100%{transform:scale(3.2);opacity:0}}
+@keyframes beam{to{stroke-dashoffset:-895}}
+@keyframes type{0%{transform:scaleX(1)}14%,90%{transform:scaleX(0)}99%,100%{transform:scaleX(1)}}
+@keyframes flow{0%{transform:translateX(0);opacity:0}10%,90%{opacity:1}100%{transform:translateX(699px);opacity:0}}
+@keyframes rise{0%{opacity:0;transform:translateY(10px)}10%,88%{opacity:1;transform:translateY(0)}98%,100%{opacity:0;transform:translateY(10px)}}
+@keyframes edge{0%,6%{transform:scaleY(0)}20%,88%{transform:scaleY(1)}98%,100%{transform:scaleY(0)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.2}}
+@keyframes scan{0%{transform:translateY(-40px)}100%{transform:translateY(294px)}}
+@keyframes blink{0%{opacity:1}50%{opacity:0}}
+@media (prefers-color-scheme:dark){.bg{fill:#0d1117}.t{fill:#c9d1d9}.a{fill:#22d3ee}.dim{fill:#8b98a6}.panel{fill:#161b22;stroke:#30363d}.edge{fill:#22d3ee}.track{stroke:#30363d}.cv{fill:#0d1117}.cvp{fill:#161b22}}
+@media (prefers-reduced-motion:reduce){.tile,.edge,.live,.cur{animation:none}.scan,.beam,.ring,.packet,.cover{display:none}}
+</style>
+<rect class="bg" width="100%" height="100%" rx="6"/>
+<text x="16" y="24"><tspan class="a" font-weight="700">agent@humberto325</tspan><tspan class="dim"> ~ $ </tspan><tspan class="t">systems --status production</tspan></text><rect class="cover cv" x="16" y="9" width="350" height="20"/><rect class="cur" x="368" y="13" width="7" height="14"/>
+<text class="dim" x="16" y="46">4 systems running right now</text>
+<g class="tile" style="animation-delay:0.20s">
+<rect class="panel" x="16" y="58" width="363.5" height="84" rx="6"/>
+<rect class="beam" x="16" y="58" width="363.5" height="84" rx="6" style="animation-delay:0.00s"/>
+<rect class="edge" x="16" y="70" width="3" height="60" rx="1.5" style="animation-delay:0.20s"/>
+<circle class="ring" cx="363.5" cy="78" r="3.5" style="animation-delay:0.00s"/>
+<circle class="live" cx="363.5" cy="78" r="3.5" style="animation-delay:0.00s"/>
+<text class="a h" x="32" y="83">WhatsApp AI agent</text>
+<text class="t" x="32" y="109">Answers every new lead, understands voice notes,</text>
+<text class="t" x="32" y="127">qualifies them and books the call by itself.</text>
+<rect class="cover cvp" x="30" y="96" width="339.5" height="17" style="animation-delay:0.50s"/>
+<rect class="cover cvp" x="30" y="114" width="339.5" height="17" style="animation-delay:0.80s"/></g><g class="tile" style="animation-delay:0.50s">
+<rect class="panel" x="391.5" y="58" width="363.5" height="84" rx="6"/>
+<rect class="beam" x="391.5" y="58" width="363.5" height="84" rx="6" style="animation-delay:1.10s"/>
+<rect class="edge" x="391.5" y="70" width="3" height="60" rx="1.5" style="animation-delay:0.50s"/>
+<circle class="ring" cx="739" cy="78" r="3.5" style="animation-delay:0.40s"/>
+<circle class="live" cx="739" cy="78" r="3.5" style="animation-delay:0.40s"/>
+<text class="a h" x="407.5" y="83">Human handoff · Slack + CRM</text>
+<text class="t" x="407.5" y="109">Detects when a sales rep joins the chat,</text>
+<text class="t" x="407.5" y="127">pauses itself and alerts the team in Slack.</text>
+<rect class="cover cvp" x="405.5" y="96" width="339.5" height="17" style="animation-delay:0.80s"/>
+<rect class="cover cvp" x="405.5" y="114" width="339.5" height="17" style="animation-delay:1.10s"/></g><g class="tile" style="animation-delay:0.80s">
+<rect class="panel" x="16" y="154" width="363.5" height="84" rx="6"/>
+<rect class="beam" x="16" y="154" width="363.5" height="84" rx="6" style="animation-delay:2.20s"/>
+<rect class="edge" x="16" y="166" width="3" height="60" rx="1.5" style="animation-delay:0.80s"/>
+<circle class="ring" cx="363.5" cy="174" r="3.5" style="animation-delay:0.80s"/>
+<circle class="live" cx="363.5" cy="174" r="3.5" style="animation-delay:0.80s"/>
+<text class="a h" x="32" y="179">Automated follow-ups</text>
+<text class="t" x="32" y="205">Re-engages leads that went quiet at the right</text>
+<text class="t" x="32" y="223">moment and revives cold ones after 30 days.</text>
+<rect class="cover cvp" x="30" y="192" width="339.5" height="17" style="animation-delay:1.10s"/>
+<rect class="cover cvp" x="30" y="210" width="339.5" height="17" style="animation-delay:1.40s"/></g><g class="tile" style="animation-delay:1.10s">
+<rect class="panel" x="391.5" y="154" width="363.5" height="84" rx="6"/>
+<rect class="beam" x="391.5" y="154" width="363.5" height="84" rx="6" style="animation-delay:3.30s"/>
+<rect class="edge" x="391.5" y="166" width="3" height="60" rx="1.5" style="animation-delay:1.10s"/>
+<circle class="ring" cx="739" cy="174" r="3.5" style="animation-delay:1.20s"/>
+<circle class="live" cx="739" cy="174" r="3.5" style="animation-delay:1.20s"/>
+<text class="a h" x="407.5" y="179">End-to-end B2B outbound</text>
+<text class="t" x="407.5" y="205">Finds companies, enriches and verifies</text>
+<text class="t" x="407.5" y="223">contacts, sends, and detects replies.</text>
+<rect class="cover cvp" x="405.5" y="192" width="339.5" height="17" style="animation-delay:1.40s"/>
+<rect class="cover cvp" x="405.5" y="210" width="339.5" height="17" style="animation-delay:1.70s"/></g>
+<text x="16" y="264"><tspan class="a">n8n + LLMs + CRM</tspan><tspan class="dim">   ·   </tspan><tspan class="a">24/7</tspan><tspan class="dim"> monitored with alerts</tspan><tspan class="dim">   ·   </tspan><tspan class="a">error handling</tspan><tspan class="dim"> built in</tspan></text>
+<line class="track" x1="16" y1="281" x2="755" y2="281"/>
+<rect class="packet" x="16" y="279.5" width="40" height="3" rx="1.5" fill="url(#pk)"/>
+<rect class="packet" x="16" y="279.5" width="40" height="3" rx="1.5" fill="url(#pk)" style="animation-delay:1.5s"/>
+<rect class="scan" x="0" y="0" width="771" height="40" fill="url(#scan)" pointer-events="none"/>
+</svg>

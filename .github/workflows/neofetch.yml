@@ -1,0 +1,35 @@
+name: Update neofetch card
+
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "tools/neofetch.py"
+      - "assets/portrait-braille.txt"
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Render cards with today's uptime
+        run: python3 tools/neofetch.py
+
+      - name: Commit if the cards changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/neofetch-*.svg
+          git diff --cached --quiet || { git commit -m "chore: update neofetch card" && git pull --rebase -q && git push; }
